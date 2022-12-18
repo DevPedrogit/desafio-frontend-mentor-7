@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+.container {
+    background-color: hsl(0, 0%, 95%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.mainCard {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 auto;
+    flex-wrap: wrap;
+}
+
+.cardContent {
+    width: 250px;
+    padding: 30px;
+}
+
+.cardContentSedans {
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.cardContentSuvs {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.cardContentLuxury {
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.imgCardContent {
+    margin-bottom: 30px;
+}
+
+.cardContentTitle {
+    color: #ffffff;
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.cardContentDescription {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 80px;
+}
+
+.cardContent .cardContentBtn {
+    padding: 14px 28px;
+    border-radius: 30px;
+    border: 2px solid transparent;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.cardContent .cardContentBtn:hover {
+    border: 2px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
+}
+
+.cardContentSedans .cardContentBtn {
+    color: hsl(31, 77%, 52%);
+}
+
+.cardContentSuvs .cardContentBtn {
+    color: hsl(184, 100%, 22%);
+}
+
+.cardContentLuxury .cardContentBtn {
+    color: hsl(179, 100%, 13%);
+}
+
+@media (max-width: 790px) {   
+    .mainCard {
+        row-gap: 15px;
+    }
+
+    .cardContentSuvs {
+        background-color: hsl(184, 100%, 22%);
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+    
+    .cardContentLuxury {
+        background-color: hsl(179, 100%, 13%);
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+}
+
+@media (max-width: 539px) {
+    .mainCard {
+        row-gap: 0;
+    }
+
+    .cardContentSedans {
+        background-color: hsl(31, 77%, 52%);
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        border-bottom-left-radius: 0;
+    }
+    
+    .cardContentSuvs {
+        background-color: hsl(184, 100%, 22%);
+        border-radius: 0;
+    }
+    
+    .cardContentLuxury {
+        background-color: hsl(179, 100%, 13%);
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+}
